@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ya&86)9o^zh^6do&f&up-#23e7t40sx5@8@fzz#6=9s@e^5$ns'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -86,9 +86,9 @@ WSGI_APPLICATION = 'revistas.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
+        'NAME': 'magazine',
+        'USER': 'crudrevista',
+        'PASSWORD': 'opportunity',
         'HOST': 'localhost',
         'PORT': '',
     }
