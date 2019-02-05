@@ -16,7 +16,7 @@ tipo_revista=[
 
 class Revista(models.Model):
     nombre_revista          =   models.CharField(max_length=80, blank=False, null=False)
-    logo                    =   models.ImageField(upload_to="logos_revistas",blank=False, null=False)
+    logo                    =   models.TextField()
     descripcion             =   models.TextField()
     tipo                    =   models.CharField(choices=tipo_revista,max_length=50, blank=False,null=False)
     def __str__(self):
