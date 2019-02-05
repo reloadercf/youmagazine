@@ -26,7 +26,7 @@ llamadas=(
 #El modelo
 
 class Articulo(models.Model):
-    titulo                  =   models.CharField(max_length=50)
+    titulo                  =   models.CharField(max_length=150)
     en_portada              =   models.BooleanField(default=False)
     origen_revista          =   models.ForeignKey("revista.Revista", on_delete=models.CASCADE)
     categoria               =   models.CharField(max_length=100,blank=False,null=False)    

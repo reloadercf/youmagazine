@@ -23,9 +23,9 @@ class Directorio (models.Model):
     telefonodos         =models.CharField(max_length=20,null=True,blank=True)
     correo              =models.EmailField(null=True,blank=True)
     sitioweb            =models.URLField(blank=True,null=True)
-    logotipo            =models.ImageField(blank=True,null=True,upload_to='directorio/logos')
-    imagen1             =models.ImageField(blank=True,null=True, upload_to='directorio/fotos')
-    imagen2             =models.ImageField(blank=True, null=True, upload_to='directorio/fotos')
+    logotipo            =models.TextField()
+    imagen1             =models.TextField()
+    imagen2             =models.TextField()
     descripcion         =models.TextField(blank=True,null=True)
     def __str__(self):
         return self.nombre_publico
